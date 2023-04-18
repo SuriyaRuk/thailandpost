@@ -1,0 +1,1 @@
+"return function () local ngx = ngx local number = '' local apikey = ngx.req.get_headers()[\"apikey\"] if apikey == 'admin-1234' then number = '098-765-4321' else number = 'XXX-765-XXXX' end ngx.header['Content-Type'] = 'application/json' ngx.say(number) end"
